@@ -1,0 +1,62 @@
+{
+  // === APARÊNCIA ===
+  "workbench.colorTheme": "Catppuccin Mocha", // Tema moderno e agradável
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 1.7,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorStyle": "line",
+  "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": false,
+  "window.zoomLevel": 0,
+
+  // === PRODUTIVIDADE ===
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.parameterHints.enabled": true,
+  "editor.suggest.preview": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.tabCompletion": "on",
+
+  // === AUTO SAVE ===
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  // === TERMINAL ===
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.smoothScrolling": true,
+
+  // === ORGANIZAÇÃO ===
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": true,
+  "workbench.statusBar.visible": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.enablePreview": false,
+
+  // === GIT ===
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.currentLine.enabled": true,
+
+  // === LINT & FORMAT ===
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.trailingComma": "all",
+  "eslint.format.enable": true
+}

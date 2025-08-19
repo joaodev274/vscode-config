@@ -1,0 +1,53 @@
+@echo off
+title Instalador de Extensoes VS Code
+color 0A
+
+echo ============================================
+echo   Instalando extensoes recomendadas no VS Code
+echo ============================================
+echo.
+
+REM === Testa se o comando "code" esta no PATH ===
+where code >nul 2>nul
+if %errorlevel% neq 0 (
+    echo ERRO: O comando "code" nao foi encontrado.
+    echo.
+    echo Abra o VS Code, pressione Ctrl+Shift+P e execute:
+    echo   Shell Command: Install 'code' command in PATH
+    echo.
+    pause
+    exit /b
+)
+
+REM === Produtividade / Codigo ===
+code --install-extension esbenp.prettier-vscode
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension christian-kohler.path-intellisense
+code --install-extension formulahendry.auto-close-tag
+code --install-extension formulahendry.auto-rename-tag
+code --install-extension dsznajder.es7-react-js-snippets
+code --install-extension ms-vscode.vscode-typescript-next
+
+REM === Visual / UX ===
+code --install-extension catppuccin.catppuccin-vsc
+code --install-extension pkief.material-icon-theme
+code --install-extension bierner.markdown-preview-github-styles
+
+REM === Terminal / Git ===
+code --install-extension eamodio.gitlens
+code --install-extension mhutchie.git-graph
+code --install-extension gruntfuggly.todo-tree
+
+REM === Utilitarios ===
+code --install-extension ritwickdey.liveserver
+code --install-extension shardulm94.trailing-spaces
+code --install-extension usernamehw.errorlens
+code --install-extension alefragnani.project-manager
+code --install-extension wakatime.vscode-wakatime
+
+echo.
+echo ============================================
+echo   Todas as extensoes foram instaladas!
+echo ============================================
+echo.
+pause
